@@ -1,0 +1,9 @@
+%h1
+  Home page
+
+=flash_message
+
+= link_to (current_user ? current_user.login : 'dashboard'), '/dashboard'
+- if current_user
+  = link_to 'admin panel', '/admin'
+  = link_to 'logout', '/logout'

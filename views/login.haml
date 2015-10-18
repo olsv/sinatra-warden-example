@@ -1,0 +1,10 @@
+Login Page
+=flash_message
+%form{action: 'login', method: 'POST'}
+  %p
+    %input{name: 'user[login]', placeholder: 'login'}
+  %p
+    %input{name: 'user[password]', placeholder: 'password', type: 'password'}
+  %p
+    %button
+      login
